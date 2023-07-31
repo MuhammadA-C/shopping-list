@@ -1,0 +1,77 @@
+body {
+  background-color: aliceblue;
+}
+
+.button-container, .list-container, .text-field-container, .filter-field-container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 480px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+input.text-field { 
+  border-color: white;
+
+}
+
+.text-field-container {
+  margin-top: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  border-radius: 1rem;
+  border-style: none;
+  background-color: gray;
+  font-size: 24px;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(184, 184, 184);
+}
+
+.button-container {
+  gap: 8rem;
+}
+
+.filter-field-container {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+input.filter-field {
+  border-style: none;
+  border-bottom: solid;
+  border-radius: 0;
+  border-color: lightgray;
+
+}
+
+li {
+  text-align: start;
+  list-style-type: none;
+  border-style: solid;
+  border-color: rgb(121, 121, 121);
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+.list {
+  background-color: lightgray;
+  width: 500px;
+  height: 400px;
+  border-radius: 1rem;
+  font-size: 24px;
+
+}
