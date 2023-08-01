@@ -62,15 +62,26 @@ input.filter-field {
 }
 
 li {
-  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   list-style-type: none;
+  
   border-style: solid;
   border-color: rgb(121, 121, 121);
   border-radius: 10px;
+
   margin-right: 40px;
   margin-top: 10px;
   padding: 10px;
+}
 
+.remove-item-btn {
+  width: 60px;
+  height: 40px;
+  background-color: lightgray;
+  color: red;
 }
 
 .list {
@@ -81,3 +92,4 @@ li {
   font-size: 24px;
 
 }
+
