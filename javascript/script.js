@@ -1,36 +1,37 @@
+import Button from "./button.js";
+import InputField from "./inputField.js";
+
+/*
 
 
-let ul = document.querySelector("ul");
 
-let listItem = document.createElement("li");
-let listItemText = document.createTextNode("Item Test");
+*/
 
-let listItemRemoveBtn = document.createElement("button");
-let addClass = "remove-item-btn";
-let btnType = "button";
-let btnText = document.createTextNode("X");
+const button = new Button();
+const inputField = new InputField();
+const ul = document.querySelector("ul");
 
-///////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 
-//adds button type to button
-listItemRemoveBtn.type = btnType;
-//adds class to button
-listItemRemoveBtn.classList.add(addClass);
-//adds text to button
-listItemRemoveBtn.appendChild(btnText);
+button.addItemBtn.addEventListener("click", () => {
+  
+  let listItem = document.createElement("li");
+  let listItemText = createText(inputField.addItemTextFieldValue);
+  let removeBtn = button.createRemoveBtn();
 
-//adds text to list item
-listItem.appendChild(listItemText);
-//adds button to list item
-listItem.appendChild(listItemRemoveBtn);
+  listItem.appendChild(listItemText);
+  listItem.appendChild(removeBtn);
 
-//adds button to unordered list
-ul.appendChild(listItem);
-
-
-let test = document.querySelector("#text-field");
-text = test.value;
+  //Adds the item entered to the list
+  ul.appendChild(listItem);
+  //Resets the text field to blank
+  inputField.resetTextField(inputField.addItemTextField);
+  
+});
 
 
 
 
+function createText(text) {
+  return document.createTextNode(text);
+}
