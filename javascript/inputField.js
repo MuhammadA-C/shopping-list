@@ -9,6 +9,10 @@ class InputField {
     return this.addItemTextField.value;
   }
 
+  get filteredItemTextField() {
+    return document.querySelector("#filter-field");
+  }
+
   isItemTextFieldEmpty() {
 
     if(this.addItemTextFieldValue == "") {

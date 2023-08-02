@@ -51,11 +51,29 @@ ul.addEventListener("click", (e) => {
   }
 });
 
+inputField.filteredItemTextField.addEventListener("input", () => {
+  console.log(inputField.filteredItemTextField.value);
 
+  if(ul.lastChild.innerText == null) {
+    return;
+  }
 
+  let targetListItemText = getListItemWord(ul);
+  console.log(targetListItemText);
 
+  //Need to add the code next to compare the input and list items, then filter
+  //
+
+});
 
 
 function createText(text) {
   return document.createTextNode(text);
+}
+
+function getListItemWord(ul) {
+  let listItemText = ul.lastChild.innerText;
+  let splitListemItemText = listItemText.split("\n");
+
+  return splitListemItemText[0];
 }
