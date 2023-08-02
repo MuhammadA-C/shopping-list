@@ -14,6 +14,11 @@ const ul = document.querySelector("ul");
 //////////////////////////////////////////////////////////////////
 
 button.addItemBtn.addEventListener("click", () => {
+
+  if(inputField.isItemTextFieldEmpty) {
+    return;
+  }
+
   
   let listItem = document.createElement("li");
   let listItemText = createText(inputField.addItemTextFieldValue);
@@ -26,7 +31,7 @@ button.addItemBtn.addEventListener("click", () => {
   ul.appendChild(listItem);
   //Resets the text field to blank
   inputField.resetTextField(inputField.addItemTextField);
-  
+
 });
 
 
