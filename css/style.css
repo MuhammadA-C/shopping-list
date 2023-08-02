@@ -21,7 +21,7 @@ input {
   font-size: 24px;
 }
 
-input.text-field { 
+#text-field { 
   border-color: white;
 }
 
@@ -53,7 +53,7 @@ button:hover {
   margin-bottom: 1.5rem;
 }
 
-input.filter-field {
+#filter-field {
   border-style: none;
   border-bottom: solid;
   border-radius: 0;
