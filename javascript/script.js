@@ -35,12 +35,18 @@ button.addItemBtn.addEventListener("click", () => {
 });
 
 button.clearAllBtn.addEventListener("click", () => {
-
   while(ul.firstChild) {
     ul.removeChild(ul.firstChild);
   }
-
 });
+
+ul.addEventListener("click", (e) => {
+  if(e.target.tagName === "BUTTON") {
+    e.target.parentElement.remove();
+  }
+});
+
+
 
 
 
