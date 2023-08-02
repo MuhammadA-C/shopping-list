@@ -26,3 +26,11 @@ listItem.appendChild(listItemRemoveBtn);
 
 //adds button to unordered list
 ul.appendChild(listItem);
+
+
+let test = document.querySelector("#text-field");
+text = test.value;
+
+
+
+
