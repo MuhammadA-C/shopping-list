@@ -15,7 +15,7 @@ const ul = document.querySelector("ul");
 
 button.addItemBtn.addEventListener("click", () => {
 
-  if(inputField.isItemTextFieldEmpty) {
+  if(inputField.isItemTextFieldEmpty()) {
     alert("Enter an item before clicking the Add Item button");
     return;
   }
