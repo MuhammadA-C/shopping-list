@@ -3,6 +3,11 @@ import InputField from "./inputField.js";
 
 /*
 
+Things left tp add:
+* Filter items
+* Persistant storage
+* Make list items not overflow out of container, instead add a scroll when items to too far out of container
+
 
 
 */

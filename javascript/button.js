@@ -9,9 +9,6 @@ class Button {
     return document.querySelector(".button-container :last-child");
   }
 
-  //need to add code to get the remove button
-
-
   createRemoveBtn() {
     let removeBtn = document.createElement("button");
 
