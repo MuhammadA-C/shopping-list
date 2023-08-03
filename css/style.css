@@ -78,6 +78,7 @@ li {
   height: 400px;
   border-radius: 1rem;
   font-size: 24px;
+  overflow-y: scroll;
 
 }
 
