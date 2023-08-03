@@ -9,7 +9,7 @@ body {
   color: black;
 }
 
-.button-container, .list-container, .text-field-container, .filter-field-container {
+.button-container, .list-container, .text-field-container {
   display: flex;
   justify-content: center;
 }
@@ -46,19 +46,7 @@ button:hover {
 
 .button-container {
   gap: 8rem;
-}
-
-.filter-field-container {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-#filter-field {
-  border-style: none;
-  border-bottom: solid;
-  border-radius: 0;
-  border-color: lightgray;
-
+  margin-bottom: 2rem;
 }
 
 li {
